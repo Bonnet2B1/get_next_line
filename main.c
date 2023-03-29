@@ -6,7 +6,7 @@
 /*   By: edelarbr <edelarbr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 16:41:21 by edelarbr          #+#    #+#             */
-/*   Updated: 2023/01/27 16:53:06 by edelarbr         ###   ########.fr       */
+/*   Updated: 2023/02/21 21:51:58 by edelarbr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,7 @@ int    main(void)
         printf("%s", line);
         if (line)
             free(line);
+        line = get_next_line(fd);
+        printf("%s", line);
     }
 }
